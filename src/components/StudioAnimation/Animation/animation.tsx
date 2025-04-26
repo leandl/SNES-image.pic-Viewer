@@ -1,4 +1,4 @@
-import { useMemo, useState } from "react";
+import { useState } from "react";
 import { SpritePreview } from "../../SNESVramViewer/SpritePreview/sprite-preview";
 import { useAnimation } from "../../../hooks/useAnimation";
 import {
@@ -17,17 +17,12 @@ export function Animation({ animation }: AnimationProps) {
 
   const { changeAnimationName, changeAnimationSize } = useStudioAnimation();
 
-  const animationLength = useMemo(
-    () => Object.keys(animation.frames).length,
-    [animation.frames]
-  );
-
-  const currentFrame = useAnimation(isPlaying, animationLength, fps);
+  const currentFrame = useAnimation(isPlaying, animation.frames.length, fps);
 
   return (
     <div className="animation-main">
       <div className="animation-header">
-        {animationLength === 0 ? (
+        {animation.frames.length === 0 ? (
           <>
             <div className="animation-empty" />
             <p>No frames available</p>
