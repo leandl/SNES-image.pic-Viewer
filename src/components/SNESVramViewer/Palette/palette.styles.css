@@ -1,0 +1,52 @@
+.palette-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  box-sizing: border-box;
+  padding: 0.5rem;
+  margin: 0;
+
+  gap: 0.5rem;
+
+  max-width: 200px;
+  border-radius: 0.5rem;
+  background: #333;
+
+  h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  input {
+    display: none;
+  }
+
+  canvas {
+    width: 100%;
+    height: auto;
+    image-rendering: pixelated;
+    background: #000;
+
+    border-radius: 0.5rem;
+    /* border: solid 1px #535353; */
+  }
+
+  button {
+    background: #444;
+    color: #ddd;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+
+    &:hover {
+      background: #555;
+    }
+
+    &:active {
+      background: #666;
+    }
+  }
+}

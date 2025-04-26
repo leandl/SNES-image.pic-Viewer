@@ -1,0 +1,43 @@
+.container-animation {
+  display: flex;
+  flex-direction: row;
+
+  .container-animation-list {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+
+    justify-content: start;
+    padding: 1rem 1rem;
+    background: hsl(0, 0%, 13%);
+
+    background-color: rgba(248, 248, 248, 0.1);
+
+    overflow-x: auto;
+
+    flex: 1;
+
+    & > button {
+      background: rgb(86, 134, 86);
+      color: #ddd;
+      border: none;
+      border-radius: 0.5rem;
+      padding: 0.5rem 1rem;
+      cursor: pointer;
+
+      &:hover {
+        background: rgb(83, 122, 83);
+        color: #fff;
+      }
+
+      &:active {
+        background: rgb(116, 168, 116);
+        color: #fff;
+      }
+    }
+  }
+
+  .container-animation-main {
+    background-color: rgba(248, 248, 248, 0.2);
+  }
+}

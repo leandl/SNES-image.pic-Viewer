@@ -1,0 +1,14 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #222;
+  color: #ddd;
+  font-family: sans-serif;
+}
+
+canvas {
+  background: #000;
+  image-rendering: pixelated;
+  width: auto;
+  height: auto;
+}
